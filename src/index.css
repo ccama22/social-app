@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #EAF1F7;
+}
+
+.stories-page{
+    display: grid;
+    grid-template-columns: 250px calc(100% - 500px) 250px;
+}
+.sidebar{
+    width: 250px;
+}
+.form-story{
+    background-color: #fff;
+    width: 100%;
+    min-height: 100px; 
+}
+.input-story{
+    width: 100%;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .stories-page{
+        grid-template-columns: 100%;
+    }
+}
